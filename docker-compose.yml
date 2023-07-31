@@ -19,7 +19,7 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/postgres
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=postgres
-      - SHOP_MAIL_RECEIVER=mismancelaleddin@hotmail.com
+      # - SHOP_MAIL_RECEIVER=abcd@gmail.com
   web-front:
     container_name: shop-front
     build:

@@ -14,9 +14,10 @@ In the project directory, you can run:
 
 Open [http://localhost](http://localhost) to view it in your browser.
 
+## Available Parameters
 
 In the `docker-compose.yml` file you can set 
 
 #### `SHOP_MAIL_RECEIVER`
 
-environment variable parameter for `web-shop` container to send email after order creation.
+environment variable for `web-shop` container to send email after order creation.
