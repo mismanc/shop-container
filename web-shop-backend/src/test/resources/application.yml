@@ -1,0 +1,13 @@
+shop:
+  mail-receiver: celaleddinmisman@gmail.com
+spring:
+  jpa:
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+  mail:
+    password: admin
+    username: user
+    host: 127.0.0.1
+    port: 3025
+    protocol: smtp

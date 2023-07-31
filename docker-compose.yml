@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  db:
+    image: 'postgres:14.8-alpine'
+    container_name: shop-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  web-shop:
+    container_name: shop-back
+    build:
+      context: web-shop-backend
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SHOP_MAIL_RECEIVER=mismancelaleddin@hotmail.com
+  web-front:
+    container_name: shop-front
+    build:
+      context: web-shop-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - web-shop

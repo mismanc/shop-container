@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>NEW ORDER</title>
+</head>
+<body>
+    <h4>NEW ORDER <span th:text="${id}" ></span> </h4>
+    <div style="height: 10px" ></div>
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>Client Name</th>
+                <th>Client Address</th>
+                <th>Product Value</th>
+                <th>Shipping Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td th:text="${clientName}">clientName</td>
+                <td th:text="${clientAddress}">clientAddress</td>
+                <td th:text="${productValue}">productValue</td>
+                <td th:text="${shippingValue}">shippingValue</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
