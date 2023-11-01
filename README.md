@@ -7,7 +7,7 @@ This container includes projects that
 ### [Shop Frontend](https://github.com/mismanc/shop-front)
 
 In this application you will see a list of some items. You can simply select and buy them.
-After clicking "Buy" button, an email including selected items will be sent to the email defined in the env variables.
+After clicking "Buy" button, and order will be created and an email including selected items will be sent to the email defined in the env variables.
 
 ## Available Scripts
 
